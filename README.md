@@ -1,2 +1,3 @@
 # valhalla-openapi-models-swift
-Valhalla's OpenAPI models in Swift
+
+A pre-generated set of Valhalla's API models and configuration models.
