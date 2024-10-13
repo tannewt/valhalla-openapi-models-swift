@@ -1,0 +1,23 @@
+name: Swift
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: macos-14
+    steps:
+      - name: Checkout valhalla-openapi-models-swift
+        uses: actions/checkout@v4
+
+      - name: Generate models
+        run: ./generate_models.sh
+
+      - name: Swift build
+        run: swift build
+
+      - name: Swift test
+        run: swift test

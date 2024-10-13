@@ -1,6 +1,6 @@
 import XCTest
-@testable import ValhallaConfig
 @testable import ValhallaModels
+@testable import ValhallaConfigModels
 
 public class ValhallaModelsTests: XCTestCase {
     
