@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
 # Define the source directories
-source_dirs=("Sources/ValhallaConfig" "Sources/ValhallaModels")
+source_dirs=("Sources/ValhallaModels" "Sources/ValhallaConfigModels")
 
 if [ "$1" == "clean" ]; then
     echo "Cleaning openapi models..."
@@ -36,7 +36,6 @@ for dir in "${source_dirs[@]}"; do
 
     # Move the generated files to the correct directory
     mv .openapi-temp/OpenAPIClient/Classes/OpenAPIsModels/* "$dir/Models/"
-    # mv .openapi-temp/OpenAPIClient/Classes/OpenAPIs/Models.swift "$dir/Support/Models.swift"
     mv .openapi-temp/OpenAPIClient/Classes/OpenAPIs/Validation.swift "$dir/Support/Validation.swift"
 
     echo "Done generating models for $dir"
