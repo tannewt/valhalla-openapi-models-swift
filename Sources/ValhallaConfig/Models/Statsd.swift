@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Statsd: Codable, JSONEncodable, Hashable {
+public struct Statsd: Codable, Hashable {
     public var port: Int? = 8125
     public var _prefix: String? = "valhalla"
 

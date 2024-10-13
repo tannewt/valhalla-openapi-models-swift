@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Thor: Codable, JSONEncodable, Hashable {
+public struct Thor: Codable, Hashable {
     public var clearReservedMemory: Bool? = false
     public var extendedSearch: Bool? = false
     public var logging: ThorLogging?

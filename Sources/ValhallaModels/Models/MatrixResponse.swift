@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MatrixResponse: Codable, JSONEncodable, Hashable {
+public struct MatrixResponse: Codable, Hashable {
     static let sourcesRule = ArrayRule(minItems: 1, maxItems: nil, uniqueItems: false)
     static let targetsRule = ArrayRule(minItems: 1, maxItems: nil, uniqueItems: false)
     static let sourcesToTargetsRule = ArrayRule(minItems: 1, maxItems: nil, uniqueItems: false)

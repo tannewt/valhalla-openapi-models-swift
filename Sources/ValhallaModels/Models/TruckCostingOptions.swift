@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct TruckCostingOptions: Codable, JSONEncodable, Hashable {
+public struct TruckCostingOptions: Codable, Hashable {
     static let useLivingStreetsRule = NumericRule<Double>(minimum: 0, exclusiveMinimum: false, maximum: 1, exclusiveMaximum: false, multipleOf: nil)
     static let useFerryRule = NumericRule<Double>(minimum: 0, exclusiveMinimum: false, maximum: 1, exclusiveMaximum: false, multipleOf: nil)
     static let useHighwaysRule = NumericRule<Double>(minimum: 0, exclusiveMinimum: false, maximum: 1, exclusiveMaximum: false, multipleOf: nil)

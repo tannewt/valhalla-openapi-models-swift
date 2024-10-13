@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct HeightResponse: Codable, JSONEncodable, Hashable {
+public struct HeightResponse: Codable, Hashable {
     /** An identifier to disambiguate requests (echoed by the server). */
     public var id: String?
     public var shape: [Coordinate]?

@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct HttpdService: Codable, JSONEncodable, Hashable {
+public struct HttpdService: Codable, Hashable {
     public var drainSeconds: Int? = 28
     public var interrupt: String? = "ipc:///tmp/interrupt"
     public var listen: String? = "tcp://_*:8002"

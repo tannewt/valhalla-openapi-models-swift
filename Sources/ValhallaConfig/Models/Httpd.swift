@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Httpd: Codable, JSONEncodable, Hashable {
+public struct Httpd: Codable, Hashable {
     public var service: HttpdService?
 
     public init(service: HttpdService? = nil) {

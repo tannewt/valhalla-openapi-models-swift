@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct CostingOptions: Codable, JSONEncodable, Hashable {
+public struct CostingOptions: Codable, Hashable {
     public var auto: AutoCostingOptions?
     public var bus: AutoCostingOptions?
     public var taxi: AutoCostingOptions?

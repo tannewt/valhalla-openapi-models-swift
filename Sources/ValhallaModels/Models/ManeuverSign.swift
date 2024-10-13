@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ManeuverSign: Codable, JSONEncodable, Hashable {
+public struct ManeuverSign: Codable, Hashable {
     /** A list of exit number elements. This is typically just a single value. */
     public var exitNumberElements: [ManeuverSignElement]?
     /** A list of exit branch elements. The text is a subsequent road name or route number after the sign. */

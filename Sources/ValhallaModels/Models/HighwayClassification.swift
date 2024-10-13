@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct HighwayClassification: Codable, JSONEncodable, Hashable {
+public struct HighwayClassification: Codable, Hashable {
     public enum Surface: String, Codable, CaseIterable {
         case pavedSmooth = "paved_smooth"
         case paved

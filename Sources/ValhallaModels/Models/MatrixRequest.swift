@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MatrixRequest: Codable, JSONEncodable, Hashable {
+public struct MatrixRequest: Codable, Hashable {
     static let sourcesRule = ArrayRule(minItems: 1, maxItems: nil, uniqueItems: false)
     static let targetsRule = ArrayRule(minItems: 1, maxItems: nil, uniqueItems: false)
     /** An identifier to disambiguate requests (echoed by the server). */

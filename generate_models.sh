@@ -29,14 +29,14 @@ for dir in "${source_dirs[@]}"; do
 
     # Generate models
     openapi-generator generate -i "$dir/openapi.yaml" -g swift5 --strict-spec=true \
-         -o .openapi-temp --model-package Models --skip-validate-spec
+         -o .openapi-temp --model-package Models --skip-validate-spec --additional-properties=useJsonEncodable=false
 
     # Format generated files
     swiftformat .openapi-temp/OpenAPIClient/Classes/OpenAPIsModels
 
     # Move the generated files to the correct directory
     mv .openapi-temp/OpenAPIClient/Classes/OpenAPIsModels/* "$dir/Models/"
-    mv .openapi-temp/OpenAPIClient/Classes/OpenAPIs/Models.swift "$dir/Support/Models.swift"
+    # mv .openapi-temp/OpenAPIClient/Classes/OpenAPIs/Models.swift "$dir/Support/Models.swift"
     mv .openapi-temp/OpenAPIClient/Classes/OpenAPIs/Validation.swift "$dir/Support/Validation.swift"
 
     echo "Done generating models for $dir"

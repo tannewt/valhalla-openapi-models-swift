@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct DirectionsOptions: Codable, JSONEncodable, Hashable {
+public struct DirectionsOptions: Codable, Hashable {
     public enum DirectionsType: String, Codable, CaseIterable {
         case _none = "none"
         case maneuvers

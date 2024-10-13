@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct NodeId: Codable, JSONEncodable, Hashable {
+public struct NodeId: Codable, Hashable {
     public var id: Int64?
     public var value: Int64?
     public var tileId: Int64?

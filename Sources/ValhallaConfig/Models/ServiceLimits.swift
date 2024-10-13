@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ServiceLimits: Codable, JSONEncodable, Hashable {
+public struct ServiceLimits: Codable, Hashable {
     public var auto: ServiceLimitsAuto?
     public var bicycle: ServiceLimitsBicycle?
     public var bikeshare: ServiceLimitsBicycle?

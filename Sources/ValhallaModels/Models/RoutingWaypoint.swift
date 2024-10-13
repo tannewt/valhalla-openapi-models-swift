@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct RoutingWaypoint: Codable, JSONEncodable, Hashable {
+public struct RoutingWaypoint: Codable, Hashable {
     public enum ModelType: String, Codable, CaseIterable {
         case _break = "break"
         case through

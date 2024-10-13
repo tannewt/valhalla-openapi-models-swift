@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct TraceAttributeFilterOptions: Codable, JSONEncodable, Hashable {
+public struct TraceAttributeFilterOptions: Codable, Hashable {
     public enum Action: String, Codable, CaseIterable {
         case include
         case exclude

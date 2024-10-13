@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct LocateDetailedEdge: Codable, JSONEncodable, Hashable {
+public struct LocateDetailedEdge: Codable, Hashable {
     public enum SacScale: String, Codable, CaseIterable {
         case _none = "none"
         case hiking

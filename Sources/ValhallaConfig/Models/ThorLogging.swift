@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ThorLogging: Codable, JSONEncodable, Hashable {
+public struct ThorLogging: Codable, Hashable {
     public var color: Bool? = true
     public var fileName: String? = "path_to_some_file.log"
     public var longRequest: Int? = 110

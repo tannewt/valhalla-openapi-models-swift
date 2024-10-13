@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct TraceAttributesBaseResponse: Codable, JSONEncodable, Hashable {
+public struct TraceAttributesBaseResponse: Codable, Hashable {
     static let confidenceScoreRule = NumericRule<Double>(minimum: 0, exclusiveMinimum: false, maximum: 1, exclusiveMaximum: false, multipleOf: nil)
     /** The list of edges matched along the path. */
     public var edges: [TraceEdge]?

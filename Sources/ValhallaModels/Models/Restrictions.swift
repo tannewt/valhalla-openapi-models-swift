@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Restrictions: Codable, JSONEncodable, Hashable {
+public struct Restrictions: Codable, Hashable {
     public var golfCart: Bool?
     public var truck: Bool?
     public var pedestrian: Bool?

@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Administrative: Codable, JSONEncodable, Hashable {
+public struct Administrative: Codable, Hashable {
     /** The ISO 3166-1 alpha-2 country code of the administrative region. */
     public var iso31661: String?
     /** The full country name. */

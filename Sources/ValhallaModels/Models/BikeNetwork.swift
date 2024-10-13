@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct BikeNetwork: Codable, JSONEncodable, Hashable {
+public struct BikeNetwork: Codable, Hashable {
     public var mountain: Bool?
     public var local: Bool?
     public var regional: Bool?

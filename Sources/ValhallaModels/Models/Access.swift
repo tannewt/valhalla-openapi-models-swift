@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Access: Codable, JSONEncodable, Hashable {
+public struct Access: Codable, Hashable {
     public var golfCart: Bool?
     public var wheelchair: Bool?
     public var taxi: Bool?

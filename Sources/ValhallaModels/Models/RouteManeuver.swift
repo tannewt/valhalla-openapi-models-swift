@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct RouteManeuver: Codable, JSONEncodable, Hashable {
+public struct RouteManeuver: Codable, Hashable {
     public enum TravelType: String, Codable, CaseIterable {
         case car
         case motorcycle

@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Warning: Codable, JSONEncodable, Hashable {
+public struct Warning: Codable, Hashable {
     public var text: String?
     public var code: Int?
 

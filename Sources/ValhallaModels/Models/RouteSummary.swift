@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct RouteSummary: Codable, JSONEncodable, Hashable {
+public struct RouteSummary: Codable, Hashable {
     /** The estimated travel time, in seconds */
     public var time: Double
     /** The estimated travel distance, in `units` (km or mi) */

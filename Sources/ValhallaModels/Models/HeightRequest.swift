@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct HeightRequest: Codable, JSONEncodable, Hashable {
+public struct HeightRequest: Codable, Hashable {
     public enum ShapeFormat: String, Codable, CaseIterable {
         case polyline6
         case polyline5

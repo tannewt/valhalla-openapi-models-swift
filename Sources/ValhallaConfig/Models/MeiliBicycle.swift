@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MeiliBicycle: Codable, JSONEncodable, Hashable {
+public struct MeiliBicycle: Codable, Hashable {
     public var turnPenaltyFactor: Int? = 140
 
     public init(turnPenaltyFactor: Int? = 140) {

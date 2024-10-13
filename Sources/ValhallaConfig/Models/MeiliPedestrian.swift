@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MeiliPedestrian: Codable, JSONEncodable, Hashable {
+public struct MeiliPedestrian: Codable, Hashable {
     public var searchRadius: Int? = 50
     public var turnPenaltyFactor: Int? = 100
 

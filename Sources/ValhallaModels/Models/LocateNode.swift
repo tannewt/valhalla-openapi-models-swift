@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct LocateNode: Codable, JSONEncodable, Hashable {
+public struct LocateNode: Codable, Hashable {
     public enum IntersectionType: String, Codable, CaseIterable {
         case regular
         case _false = "false"

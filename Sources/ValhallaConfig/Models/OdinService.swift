@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct OdinService: Codable, JSONEncodable, Hashable {
+public struct OdinService: Codable, Hashable {
     public var proxy: String? = "ipc:///tmp/odin"
 
     public init(proxy: String? = "ipc:///tmp/odin") {

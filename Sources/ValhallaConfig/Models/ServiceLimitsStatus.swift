@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ServiceLimitsStatus: Codable, JSONEncodable, Hashable {
+public struct ServiceLimitsStatus: Codable, Hashable {
     public var allowVerbose: Bool? = false
 
     public init(allowVerbose: Bool? = false) {

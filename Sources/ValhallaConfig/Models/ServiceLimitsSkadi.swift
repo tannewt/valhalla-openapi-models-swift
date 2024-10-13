@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ServiceLimitsSkadi: Codable, JSONEncodable, Hashable {
+public struct ServiceLimitsSkadi: Codable, Hashable {
     public var maxShape: Int? = 750_000
     public var minResample: Int? = 10
 

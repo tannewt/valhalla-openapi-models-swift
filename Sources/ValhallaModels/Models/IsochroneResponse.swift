@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct IsochroneResponse: Codable, JSONEncodable, Hashable {
+public struct IsochroneResponse: Codable, Hashable {
     public enum ModelType: String, Codable, CaseIterable {
         case featureCollection = "FeatureCollection"
     }

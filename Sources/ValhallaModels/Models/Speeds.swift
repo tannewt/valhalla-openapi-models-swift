@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Speeds: Codable, JSONEncodable, Hashable {
+public struct Speeds: Codable, Hashable {
     public enum ModelType: String, Codable, CaseIterable {
         case classified
         case tagged

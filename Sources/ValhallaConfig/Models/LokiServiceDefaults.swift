@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct LokiServiceDefaults: Codable, JSONEncodable, Hashable {
+public struct LokiServiceDefaults: Codable, Hashable {
     public var headingTolerance: Int? = 60
     public var minimumReachability: Int? = 50
     public var nodeSnapTolerance: Int? = 5

@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct NearestRoadsRequest: Codable, JSONEncodable, Hashable {
+public struct NearestRoadsRequest: Codable, Hashable {
     static let locationsRule = ArrayRule(minItems: 1, maxItems: nil, uniqueItems: false)
     public var locations: [Coordinate]
     public var costing: CostingModel?

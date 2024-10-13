@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ServiceLimitsCentroid: Codable, JSONEncodable, Hashable {
+public struct ServiceLimitsCentroid: Codable, Hashable {
     public var maxDistance: Int? = 200_000
     public var maxLocations: Int? = 5
 
