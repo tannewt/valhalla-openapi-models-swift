@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct TraceAttributesRequest: Codable, JSONEncodable, Hashable {
+public struct TraceAttributesRequest: Codable, Hashable {
     public enum ShapeMatch: String, Codable, CaseIterable {
         case edgeWalk = "edge_walk"
         case mapSnap = "map_snap"

@@ -5,28 +5,21 @@ let package = Package(
     name: "ValhallaModels",
     platforms: [.macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6), .visionOS(.v1)],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-openapi-generator", from: "1.0.0"),
-        .package(url: "https://github.com/apple/swift-openapi-runtime", from: "1.0.0"),
+        .package(url: "https://github.com/Flight-School/AnyCodable", .upToNextMajor(from: "0.6.1")),
     ],
     targets: [
-        .executableTarget(
+        .target(
             name: "ValhallaConfig",
-            dependencies: [
-                .product(name: "OpenAPIRuntime", package: "swift-openapi-runtime")
-            ],
-            plugins: [
-                .plugin(name: "OpenAPIGenerator", package: "swift-openapi-generator")
-            ]
+            dependencies: ["AnyCodable"],
+            path: "Sources/ValhallaConfig"
         ),
-        .executableTarget(
+        .target(
             name: "ValhallaModels",
-            dependencies: [
-                .product(name: "OpenAPIRuntime", package: "swift-openapi-runtime")
-            ],
-            plugins: [
-                .plugin(name: "OpenAPIGenerator", package: "swift-openapi-generator")
-            ]
+            dependencies: ["AnyCodable"],
+            path: "Sources/ValhallaModels"
         ),
-        .testTarget(name: "Tests", dependencies: ["ValhallaConfig", "ValhallaModels"])
+        .testTarget(
+            name: "Tests",
+            dependencies: ["ValhallaConfig", "ValhallaModels"])
     ]
 )

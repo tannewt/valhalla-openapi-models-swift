@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MeiliDefault: Codable, JSONEncodable, Hashable {
+public struct MeiliDefault: Codable, Hashable {
     public var beta: Int? = 3
     public var breakageDistance: Int? = 2000
     public var geometry: Bool? = false

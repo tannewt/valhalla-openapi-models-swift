@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MapMatchWaypoint: Codable, JSONEncodable, Hashable {
+public struct MapMatchWaypoint: Codable, Hashable {
     public enum ModelType: String, Codable, CaseIterable {
         case _break = "break"
         case through

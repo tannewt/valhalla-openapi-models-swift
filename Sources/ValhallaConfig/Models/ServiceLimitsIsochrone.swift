@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ServiceLimitsIsochrone: Codable, JSONEncodable, Hashable {
+public struct ServiceLimitsIsochrone: Codable, Hashable {
     public var maxContours: Int? = 4
     public var maxDistance: Int? = 25000
     public var maxDistanceContour: Int? = 200

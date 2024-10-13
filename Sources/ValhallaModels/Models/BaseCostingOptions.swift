@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct BaseCostingOptions: Codable, JSONEncodable, Hashable {
+public struct BaseCostingOptions: Codable, Hashable {
     static let useLivingStreetsRule = NumericRule<Double>(minimum: 0, exclusiveMinimum: false, maximum: 1, exclusiveMaximum: false, multipleOf: nil)
     static let useFerryRule = NumericRule<Double>(minimum: 0, exclusiveMinimum: false, maximum: 1, exclusiveMaximum: false, multipleOf: nil)
     /** A penalty (in seconds) applied when transitioning between roads (determined by name). */

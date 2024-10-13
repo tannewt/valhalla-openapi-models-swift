@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Logging: Codable, JSONEncodable, Hashable {
+public struct Logging: Codable, Hashable {
     public var color: Bool? = true
     public var fileName: String? = "path_to_some_file.log"
     public var type: String? = "std_out"

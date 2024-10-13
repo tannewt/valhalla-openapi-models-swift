@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct PedestrianCostingOptions: Codable, JSONEncodable, Hashable {
+public struct PedestrianCostingOptions: Codable, Hashable {
     static let walkingSpeedRule = NumericRule<Double>(minimum: 0.5, exclusiveMinimum: false, maximum: 25, exclusiveMaximum: false, multipleOf: nil)
     static let useFerryRule = NumericRule<Double>(minimum: 0, exclusiveMinimum: false, maximum: 1, exclusiveMaximum: false, multipleOf: nil)
     static let useLivingStreetsRule = NumericRule<Double>(minimum: 0, exclusiveMinimum: false, maximum: 1, exclusiveMaximum: false, multipleOf: nil)

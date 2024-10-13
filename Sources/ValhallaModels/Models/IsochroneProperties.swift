@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct IsochroneProperties: Codable, JSONEncodable, Hashable {
+public struct IsochroneProperties: Codable, Hashable {
     public enum Metric: String, Codable, CaseIterable {
         case time
         case distance

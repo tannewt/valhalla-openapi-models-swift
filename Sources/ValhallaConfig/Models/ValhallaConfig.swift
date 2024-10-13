@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ValhallaConfig: Codable, JSONEncodable, Hashable {
+public struct ValhallaConfig: Codable, Hashable {
     public var additionalData: AdditionalData?
     public var httpd: Httpd?
     public var loki: Loki?

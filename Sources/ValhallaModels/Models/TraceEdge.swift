@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct TraceEdge: Codable, JSONEncodable, Hashable {
+public struct TraceEdge: Codable, Hashable {
     public enum Surface: String, Codable, CaseIterable {
         case pavedSmooth = "paved_smooth"
         case paved

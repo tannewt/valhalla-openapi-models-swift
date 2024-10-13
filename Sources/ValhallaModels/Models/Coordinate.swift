@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Coordinate: Codable, JSONEncodable, Hashable {
+public struct Coordinate: Codable, Hashable {
     /** The latitude of a point in the shape. */
     public var lat: Double
     /** The longitude of a point in the shape. */

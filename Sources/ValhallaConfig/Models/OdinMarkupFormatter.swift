@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct OdinMarkupFormatter: Codable, JSONEncodable, Hashable {
+public struct OdinMarkupFormatter: Codable, Hashable {
     public var markupEnabled: Bool? = false
     public var phonemeFormat: String? = "<TEXTUAL_STRING> (<span class=<QUOTES>phoneme<QUOTES>>/<VERBAL_STRING>/</span>)"
 

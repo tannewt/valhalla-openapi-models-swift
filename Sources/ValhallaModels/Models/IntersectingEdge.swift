@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct IntersectingEdge: Codable, JSONEncodable, Hashable {
+public struct IntersectingEdge: Codable, Hashable {
     /** The direction at the beginning of an edge. The units are degrees clockwise from north. */
     public var beginHeading: Int?
     /** True if this intersecting edge at the end node has consistent names with the path from the other edge. */

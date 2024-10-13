@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MapMatchRouteResponse: Codable, JSONEncodable, Hashable {
+public struct MapMatchRouteResponse: Codable, Hashable {
     /** An identifier to disambiguate requests (echoed by the server). */
     public var id: String?
     public var trip: RouteResponseTrip

@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MapMatchTraceOptions: Codable, JSONEncodable, Hashable {
+public struct MapMatchTraceOptions: Codable, Hashable {
     /** The search radius, in meters, when trying to match each trace point. */
     public var searchRadius: Int?
     /** The accuracy of the GPS, in meters. */

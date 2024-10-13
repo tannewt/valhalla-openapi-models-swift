@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MjolnirDataProcessing: Codable, JSONEncodable, Hashable {
+public struct MjolnirDataProcessing: Codable, Hashable {
     public var allowAltName: Bool? = false
     public var applyCountryOverrides: Bool? = true
     public var inferInternalIntersections: Bool? = true

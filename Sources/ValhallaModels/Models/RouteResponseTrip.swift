@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct RouteResponseTrip: Codable, JSONEncodable, Hashable {
+public struct RouteResponseTrip: Codable, Hashable {
     /** The response status code */
     public var status: Int
     /** The response status message */

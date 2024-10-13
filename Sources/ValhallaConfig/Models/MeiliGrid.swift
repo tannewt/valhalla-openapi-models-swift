@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MeiliGrid: Codable, JSONEncodable, Hashable {
+public struct MeiliGrid: Codable, Hashable {
     public var cacheSize: Int? = 100_240
     public var size: Int? = 500
 

@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct EdgeSign: Codable, JSONEncodable, Hashable {
+public struct EdgeSign: Codable, Hashable {
     public var exitNumber: [String]?
     public var exitBranch: [String]?
     public var exitToward: [String]?

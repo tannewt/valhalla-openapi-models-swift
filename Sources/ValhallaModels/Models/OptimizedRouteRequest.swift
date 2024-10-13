@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct OptimizedRouteRequest: Codable, JSONEncodable, Hashable {
+public struct OptimizedRouteRequest: Codable, Hashable {
     static let locationsRule = ArrayRule(minItems: 3, maxItems: nil, uniqueItems: false)
     /** An identifier to disambiguate requests (echoed by the server). */
     public var id: String?

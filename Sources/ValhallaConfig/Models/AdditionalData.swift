@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct AdditionalData: Codable, JSONEncodable, Hashable {
+public struct AdditionalData: Codable, Hashable {
     public var elevation: String? = "/custom_files/elevation_data"
 
     public init(elevation: String? = "/custom_files/elevation_data") {

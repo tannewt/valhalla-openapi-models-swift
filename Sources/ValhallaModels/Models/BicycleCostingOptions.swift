@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct BicycleCostingOptions: Codable, JSONEncodable, Hashable {
+public struct BicycleCostingOptions: Codable, Hashable {
     public enum BicycleType: String, Codable, CaseIterable {
         case road = "Road"
         case hybrid = "Hybrid"

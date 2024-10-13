@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Odin: Codable, JSONEncodable, Hashable {
+public struct Odin: Codable, Hashable {
     public var logging: Logging?
     public var markupFormatter: OdinMarkupFormatter?
     public var service: OdinService?

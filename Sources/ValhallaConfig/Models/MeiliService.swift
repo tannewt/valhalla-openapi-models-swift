@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MeiliService: Codable, JSONEncodable, Hashable {
+public struct MeiliService: Codable, Hashable {
     public var proxy: String? = "ipc:///tmp/meili"
 
     public init(proxy: String? = "ipc:///tmp/meili") {

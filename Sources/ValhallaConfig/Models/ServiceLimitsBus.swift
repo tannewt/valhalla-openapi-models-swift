@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct ServiceLimitsBus: Codable, JSONEncodable, Hashable {
+public struct ServiceLimitsBus: Codable, Hashable {
     public var maxDistance: Int? = 5_000_000
     public var maxLocations: Int? = 50
     public var maxMatrixDistance: Int? = 400_000

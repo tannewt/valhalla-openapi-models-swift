@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MatchedPoint: Codable, JSONEncodable, Hashable {
+public struct MatchedPoint: Codable, Hashable {
     public enum ModelType: String, Codable, CaseIterable {
         case unmatched
         case interpolated

@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct LocateEdge: Codable, JSONEncodable, Hashable {
+public struct LocateEdge: Codable, Hashable {
     public enum SideOfStreet: String, Codable, CaseIterable {
         case _left = "left"
         case _right = "right"

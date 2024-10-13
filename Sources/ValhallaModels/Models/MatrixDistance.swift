@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct MatrixDistance: Codable, JSONEncodable, Hashable {
+public struct MatrixDistance: Codable, Hashable {
     /** The distance (in `units`) between the location in `sources` at `from_index` and the location in `targets` at `to_index`. */
     public var distance: Double
     /** The travel time (in seconds) between the location in `sources` at `from_index` and the location in `targets` at `to_index`. */

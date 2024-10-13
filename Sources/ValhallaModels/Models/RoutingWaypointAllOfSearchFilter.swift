@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct RoutingWaypointAllOfSearchFilter: Codable, JSONEncodable, Hashable {
+public struct RoutingWaypointAllOfSearchFilter: Codable, Hashable {
     /** Excludes roads marked as tunnels */
     public var excludeTunnel: Bool? = false
     /** Excludes roads marked as bridges */

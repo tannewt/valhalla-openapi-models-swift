@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct LocateObject: Codable, JSONEncodable, Hashable {
+public struct LocateObject: Codable, Hashable {
     /** An identifier to disambiguate requests (echoed by the server). */
     public var id: String?
     /** The input (searched) latitude. */

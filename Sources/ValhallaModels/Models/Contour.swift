@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Contour: Codable, JSONEncodable, Hashable {
+public struct Contour: Codable, Hashable {
     /** The time in minutes for the contour. Mutually exclusive of distance. */
     public var time: Double?
     /** The distance in km for the contour. Mutually exclusive of time. */

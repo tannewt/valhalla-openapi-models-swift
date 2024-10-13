@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Loki: Codable, JSONEncodable, Hashable {
+public struct Loki: Codable, Hashable {
     public var actions: [String]?
     public var logging: LokiLogging?
     public var service: LokiService?

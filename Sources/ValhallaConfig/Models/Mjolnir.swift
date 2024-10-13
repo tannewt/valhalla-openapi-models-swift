@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Mjolnir: Codable, JSONEncodable, Hashable {
+public struct Mjolnir: Codable, Hashable {
     public var admin: String? = "/custom_data/admins.sqlite"
     public var dataProcessing: MjolnirDataProcessing?
     public var globalSynchronizedCache: Bool? = false

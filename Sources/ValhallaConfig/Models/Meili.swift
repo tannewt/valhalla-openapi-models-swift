@@ -10,7 +10,7 @@ import Foundation
     import AnyCodable
 #endif
 
-public struct Meili: Codable, JSONEncodable, Hashable {
+public struct Meili: Codable, Hashable {
     public var auto: MeiliAuto?
     public var bicycle: MeiliBicycle?
     public var customizable: [String]?
