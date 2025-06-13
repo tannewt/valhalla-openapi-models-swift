@@ -15,4 +15,5 @@ public enum Traversability: String, Codable, CaseIterable {
     case forward
     case backward
     case both
+    case _none = "none"
 }

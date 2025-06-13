@@ -1592,6 +1592,7 @@ components:
         - forward
         - backward
         - both
+        - none
     edgeUse:
       type: string
       enum:
