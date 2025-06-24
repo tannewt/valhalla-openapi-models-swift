@@ -1642,6 +1642,13 @@ components:
           type: boolean
           description: >-
             True if this intersecting edge at the end node has consistent names with the path to the other edge.
+        names:
+          type: array
+          description: >-
+            A list of street names for the intersecting edge
+          items:
+            type: string
+            example: A1
         driveability:
           $ref: "#/components/schemas/traversability"
         cyclability:
