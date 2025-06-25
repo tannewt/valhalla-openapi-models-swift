@@ -12,18 +12,21 @@ import Foundation
 
 public struct RouteLeg: Codable, Hashable {
     public static let maneuversRule = ArrayRule(minItems: 1, maxItems: nil, uniqueItems: false)
+    public var edgeIds: [Int64]
     public var maneuvers: [RouteManeuver]
     /** An encoded polyline (https://developers.google.com/maps/documentation/utilities/polylinealgorithm) with 6 digits of decimal precision. */
     public var shape: String
     public var summary: RouteSummary
 
-    public init(maneuvers: [RouteManeuver], shape: String, summary: RouteSummary) {
+    public init(edgeIds: [Int64], maneuvers: [RouteManeuver], shape: String, summary: RouteSummary) {
+        self.edgeIds = edgeIds
         self.maneuvers = maneuvers
         self.shape = shape
         self.summary = summary
     }
 
     public enum CodingKeys: String, CodingKey, CaseIterable {
+        case edgeIds = "edge_ids"
         case maneuvers
         case shape
         case summary
@@ -33,6 +36,7 @@ public struct RouteLeg: Codable, Hashable {
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(edgeIds, forKey: .edgeIds)
         try container.encode(maneuvers, forKey: .maneuvers)
         try container.encode(shape, forKey: .shape)
         try container.encode(summary, forKey: .summary)

@@ -1649,6 +1649,11 @@ components:
           items:
             type: string
             example: A1
+        edge_id:
+          type: integer
+          format: int64
+        sign:
+          $ref: "#/components/schemas/edgeSign"
         driveability:
           $ref: "#/components/schemas/traversability"
         cyclability:
@@ -1916,6 +1921,11 @@ components:
     routeLeg:
       type: object
       properties:
+        edge_ids:
+          type: array
+          items:
+            type: integer
+            format: int64
         maneuvers:
           type: array
           items:
@@ -1929,6 +1939,7 @@ components:
         summary:
           $ref: "#/components/schemas/routeSummary"
       required:
+        - edge_ids
         - maneuvers
         - shape
         - summary
